@@ -1,0 +1,14 @@
+<?xml version="1.0"?>
+<layout>
+    <aw_onestepcheckout_index_index> <!-- AW_Onestepcheckout -->
+        <reference name="head">
+            <action method="addItem"><type>js_css</type><name>calendar/calendar-win2k-1.css</name><params/></action>
+            <action method="addItem"><type>js</type><name>calendar/calendar.js</name></action>
+            <action method="addItem"><type>js</type><name>calendar/calendar-setup.js</name></action>
+            <action method="addItem"><type>js</type><name>amasty/amdeliverydate/deliverydate.js</name></action>
+        </reference>
+        <reference name="content">
+            <block type="core/html_calendar" name="html_calendar" as="html_calendar" template="page/js/calendar.phtml"/>
+        </reference>
+    </aw_onestepcheckout_index_index>
+</layout>

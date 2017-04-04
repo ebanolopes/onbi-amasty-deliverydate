@@ -1,0 +1,44 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<config>
+    <modules>
+        <Onbi_AmastyDeliverydate>
+            <version>1.0.0</version>
+        </Onbi_AmastyDeliverydate>
+    </modules>
+
+    <global>
+        <blocks>
+            <amdeliverydate>
+                <rewrite>
+                    <checkout_onepage_shipping_method_deliverydate>Onbi_AmastyDeliverydate_Block_Checkout_Onepage_Shipping_Method_Deliverydate</checkout_onepage_shipping_method_deliverydate>
+                </rewrite>
+            </amdeliverydate>
+        </blocks>
+
+        <helpers>
+            <amdeliverydate>
+                <rewrite>
+                    <data>Onbi_AmastyDeliverydate_Helper_Data</data>
+                </rewrite>
+            </amdeliverydate>
+        </helpers>
+
+        <models>
+            <amdeliverydate>
+                <rewrite>
+                    <observer>Onbi_AmastyDeliverydate_Model_Observer</observer>
+                </rewrite>
+            </amdeliverydate>
+        </models>
+    </global>
+
+    <frontend>
+        <layout>
+            <updates>
+                <amdeliverydate>
+                    <file>onbi/amdeliverydate/amdeliverydate.xml</file>
+                </amdeliverydate>
+            </updates>
+        </layout>
+    </frontend>
+</config>
